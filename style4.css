@@ -1,0 +1,283 @@
+#logo {
+    display: flex;
+    align-items: center;
+    padding: 0.25em 0.5em 0.25em 1em;
+  }
+  img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    font-size: 3em;
+    font-weight: 700;
+    color: #424242;
+    margin: 0;
+    }
+  
+      article {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: stretch;
+      }
+        a {
+          display: block;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: black !important;
+          font-size: 1.25em;
+          font-weight: 800;
+          margin: 0.5em 1.75em;
+          padding: 0.5em 0;
+          border-radius: 0;
+          border-style: solid;
+          border-color: transparent;
+          border-width: 2px;
+          transition: all 0.4s ease;
+          font-family: Open Sans;
+        }
+          a:hover {
+            border-radius: 0;
+            border-bottom-style: solid;
+          }
+  
+          
+          a:nth-child(odd):hover {
+            border-bottom-color: #ca1e56;
+          }
+  
+          a:nth-child(even):hover {
+            border-bottom-color: #4c9ad2;
+          }
+      
+  
+    a:nth-child(odd):hover {
+        color: #ca1e56;
+      }
+  
+      a:nth-child(even):hover {
+        color: #4c9ad2;
+      }
+    
+  
+  
+    .btn-default {
+      border-radius: 0.5em;
+      height: 2em;
+      line-height: 0.2em;
+      color: #FFFFFF;
+      font-family: Open Sans;
+      width: 10em;
+      font-size: 1em;
+      font-weight: 450;
+      padding: 0.5em 1em;
+      margin: 1.3em 2.7em 1.3em 2em;
+      background-color: #C61F55;
+      border: solid #C61F55 0.0625em;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase; 
+    }
+  
+    button:hover {
+      background: #BB0C45;
+      border: solid #CB1C55 0.0625em;
+      border-radius: 0.625em;
+      text-decoration: none;
+    }
+  
+    span > img {
+      border-radius: 50%;
+      margin: 1em 2.7em 1.3em 2em;
+      cursor: pointer;
+    }
+  
+    aside {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      justify-content: center;
+    }
+      a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #424242;
+        font-size: 1.15em;
+        padding: 0.25em 0.5em;
+        margin: 0 1em;
+        transition: all 0.5s ease;
+  
+        a:hover {
+          transform: scale(1.15, 1.15);
+    
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    #top-bar section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+      img {
+        font-size: 2em;
+          max-width: 100px;
+        }
+  
+        
+      }
+  
+  
+  @media only screen and (max-width: 900px) {
+    #top-bar {
+      section {
+        flex-direction: column;
+        align-items: flex-start;
+  
+        #logo {
+          img {
+            max-width: 100px;
+          }
+  
+          font-size: 2em;
+        }
+  
+        article a {
+          font-size: 1.5em;
+        }
+      }
+  
+      aside a {
+        font-size: 1em;
+      }
+    }
+  }
+
+
+    .container {
+      display: table;
+      width: 100%;
+    }
+    
+    .left-half {
+      background-color: white;
+      position: absolute;
+      left: 0px;
+      width: 50%;
+    }
+  
+    .btn-primary{
+      background-color:#ca1e56 !important;
+      border: solid #C61F55 0.0625em !important;
+      padding-left:20%;
+      margin-top:5%;
+    }
+
+    .btn-success{
+        background-color:#ca1e56 !important;
+        border: solid #C61F55 0.0625em !important;
+        margin-left:25%;
+        margin-top:5%;
+        position:absolute;
+      }
+
+    .resend{
+        color:black;
+        text-transform: none; 
+        margin-left:2%;
+
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 5%;
+        padding: 6%;
+    }
+
+
+    .right-half {
+      position: absolute;
+      right: 0px;
+      width: 50%;
+      height:100%;
+      background: url(C:/Users/shail/OneDrive/Desktop/govhack3/images/cities.jpg);
+      background-size: cover;
+      opacity: 0.9;
+      background-repeat: no-repeat;
+    } 
+    
+  
+    h1{
+      font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      margin-left: 10px;
+    } 
+    
+    
+    li {
+      float: left;
+      font-family:"Open Sans", Helvetica, Arial, sans-serif;
+      margin: 15px 15px 10px 10px;
+      text-decoration:none;
+      
+    }
+    
+    li a {
+      display: block;
+      text-align: justify;
+    }
+  
+  .reg{
+    padding-left: 10%;
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  
+  form{
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    padding-left: 15%;
+    }
+
+  
+  .somebutton{
+    text-align: inline-block;
+    margin-top: 3%;
+  }
+
+  .btn-danger{
+    margin-left: 40%;
+    color: white !important;
+  }
+  .welcome{
+      font-family: 'Roboto', sans-serif;
+      color:white;
+      font-size: 20px;
+      padding-top:10%;
+      text-transform:none;
+      margin-left: 10%;
+    }
+  
+  .wel{
+    font-size: 50px;
+  }
+  
+  .title{
+    font-size: 90px;
+  }
+  
+  p.hey{
+    font-size: 30px;
+  }
+
+u {
+    color: black;
+}
+
+    u:hover {
+        text-decoration: underline;
+        color: #C61F55;
+    }
+
+
