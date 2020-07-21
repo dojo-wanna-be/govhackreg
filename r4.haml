@@ -1,0 +1,119 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "style4.css", :rel => "stylesheet"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :rel => "stylesheet"}/
+    %script{:crossorigin => "anonymous", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :src => "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"}
+    %title
+      Gov Hack
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      %a.navbar-brand{:href => "#"}
+        %img{:alt => "", :height => "30", :loading => "lazy", :src => "C:/Users/shail/OneDrive/Desktop/govhack3/images/bannerlogo.png", :width => "30"}/
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item
+            %a.nav-link{:href => "#"} Conference
+          %li.nav-item
+            %a.nav-link{:href => "#"} Events
+          %li.nav-item
+            %a.nav-link{:href => "#"} Challenges
+          %li.nav-item
+            %a.nav-link{:href => "#"} Projects
+          %li.nav-item
+            %a.nav-link{:href => "#"} Datasets
+        %button.btn.btn-default{:type => "button"} join the hack
+    %section.container
+      .left-half
+        .reg
+          %h1.r Register
+          %ul.sreg{:style => "list-style-type:none;"}
+            %li{:a => "", :href => "r1.html"} 1. Account Information
+            %li &gt;
+            %li{:a => "", :href => "r2.html"} 2. Terms &amp; Conditions
+            %li &gt;
+            %li{:a => "", :href => "r3.html"}
+              %u 3. About You
+          %p
+            GovHack values diversity and inclusion.
+            The following fields are optional and are used strictly for reporting on our progress in making GovHack inclusive for all.
+            You may choose to skip some or all of the questions.
+            We would be grateful for any answers you do provide and these are stored securely and will not be passed onto a third party except in aggregated,
+            de-identified form.
+        %form
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "exampleInputfullname1"}
+                What is your gender?
+              %input#gender.form-control{"aria-describedby" => "gender", :placeholder => "", :type => "gender"}/
+          .form-group.col-md-6
+            %label{:for => "inputState"} What is your age category?
+            %select#inputState.form-control
+              %option{:selected => "selected"} Choose...
+              %option Yes
+              %option No
+              %option Prefer not to say
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "exampleInputfullname1"}
+                What is your postcode?
+              %input#examplepostcode1.form-control{"aria-describedby" => "postcode", :placeholder => "", :type => "postcode"}/
+          .form-group.col-md-6
+            %label{:for => "inputState"} Are you of Aboriginal or Torres Strait Islander origin?
+            %select#inputState.form-control
+              %option{:selected => "selected"} Choose...
+              %option Yes
+              %option No
+              %option Prefer not to say
+          .form-group.col-md-6
+            %label{:for => "inputState"} Do you identify as a person with a disability?
+            %select#inputState.form-control
+              %option{:selected => "selected"} Choose...
+              %option Yes
+              %option No
+              %option Prefer not to say
+          .form-group.col-md-6
+            %label{:for => "inputState"} What is the highest education level you have completed?
+            %select#inputState.form-control
+              %option{:selected => "selected"} Choose...
+              %option
+              %option
+              %option
+              %option
+              %option
+              %option
+              %option
+          .form-group.col-md-6
+            %label{:for => "inputState"} What is your employment status?
+            %select#inputState.form-control
+              %option{:selected => "selected"} Choose...
+              %option
+              %option
+              %option
+              %option
+              %option
+              %option
+              %option
+          .somebutton
+            %u.back{:href => "r3.html"}
+              %u{:a => "", :href => "r3.html"} Back
+            %a.btn.btn-danger{:button => "", :href => "#", :type => "button"} SUBMIT
+      .right-half
+        %link{:href => "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap", :rel => "stylesheet"}/
+        .welcome
+          %h2.wel Welcome to
+          %h1.title GovHack 2020
+          %p.hey
+            GovHack is an international competition for people
+            %br/
+            of all abilities who seek to make life better through open data.
+          %p.hey
+            Across one weekend, thousand come together to form teams,
+            %br/
+            agree projects, and participate in what has become
+            %br/
+            one of the world's larget open data competition.

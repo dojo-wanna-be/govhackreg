@@ -1,0 +1,83 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "style2.css", :rel => "stylesheet"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :rel => "stylesheet"}/
+    %script{:crossorigin => "anonymous", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :src => "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"}
+    %title
+      Gov Hack
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      %a.navbar-brand{:href => "#"}
+        %img{:alt => "", :height => "30", :loading => "lazy", :src => "C:/Users/shail/OneDrive/Desktop/govhack3/images/bannerlogo.png", :width => "30"}/
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item
+            %a.nav-link{:href => "#"} Conference
+          %li.nav-item
+            %a.nav-link{:href => "#"} Events
+          %li.nav-item
+            %a.nav-link{:href => "#"} Challenges
+          %li.nav-item
+            %a.nav-link{:href => "#"} Projects
+          %li.nav-item
+            %a.nav-link{:href => "#"} Datasets
+        %button.btn.btn-default{:type => "button"} join the hack
+    %section.container
+      .left-half
+        .reg
+          %h1.r Register
+          %ul.sreg{:style => "list-style-type:none;"}
+            %li{:a => "", :href => "r1.html"} 1. Account Information
+            %li &gt;
+            %li{:a => "", :href => "r2.html"}
+              %u 2. Terms &amp; Conditions
+            %li &gt;
+            %li{:a => "", :href => "r3.html"} 3. About You
+        .someinfo
+          %h1
+            GovHack Hackerspace Terms and Conditions
+          %h2 Introduction
+          %p
+            The Terms of Use of the GovHack Hackerspace website include these Terms and Conditions, the Privacy Policy and any other terms and conditions that appear in or are linked to the GovHack website.
+          %h2
+            Website content and access
+          %p
+            While GovHack Australia Limited endeavours to take reasonable care in preparing and maintaining the information on this website we do not warrant the accuracy, reliability, adequacy or completeness of any of the website content. You acknowledge and accept that the website content may include technical inaccuracies and typographical errors. The website content is subject to change at any time without notice and may not necessarily be up to date or accurate at the time you view it.
+          %p
+            It is your responsibility to enquire with us directly to ensure the accuracy and currency of the material or information you seek to rely upon. To the extent permitted by law, including the Competition and Consumer Act 2010 (Cth), GovHack Australia Limited disclaims all liability for loss directly or indirectly arising from your use of or reliance on the website and the website content.
+          %p
+            GovHack Australia Limited does not guarantee that access to the GovHack Hackerspace website will be uninterrupted or that the website is free from viruses or anything else which may damage any computer which accesses the GovHack Hackerspace website or any data on such a computer.
+          %h2
+            Limitation of liability
+          %p
+            To the maximum extent permitted by law GovHack Australia Limited excludes all liability for any loss or damage of any kind (including special, indirect or consequential loss and including loss of business profits) arising out of or in connection with the website content and the use or performance of the GovHack Hackerspace website except to the extent that the loss or damage is directly caused by GovHack Australia Limited’s fraud or wilful misconduct.
+          %h2
+            Intellectual property
+          %p
+            GovHack and the GovHack Logo are registered trademarks of GovHack Australia Limited.
+          %p
+            Sponsor logos and names are the property of their respective organisation. They are projected by copyright, trade mark and other intellectual property laws.
+          %h2
+            Submissions
+          %p
+            Any material you send to use on or via the GovHack Hackerspace website will be deemed to be non-confidential and non-proprietary, unless it is indicated to be otherwise. This includes, data, descriptions, comments, ideas, or other information. We will be entitled to use any such material which has not been indicated to be confidential or proprietary for any the purposes, non limited to but including storing, displaying, promoting, judging the content and for promotion of the GovHack competition.
+          %p
+            Intellectual property for submissions is retained by the previous owner(s).
+          %h2
+            Third party websites
+          %p
+            The GovHack Hackerspace Website may contain links to other websites operated, controlled or produced by third parties. Unless otherwise indicated, GovHack Hackerspace does not control, endorse, sponsor or approve any such third party websites or their content nor does GovHack Australia Limited provide any warranty or take any responsibility whatsoever for any aspect of those websites or their content.
+        .somebutton
+          .form-check
+            %input#validationServer03.form-check-input.is-invalid{:placeholder => "", :type => "checkbox"}/
+            %label.form-check-label{:for => "exampleCheck1"} I accept Terms and Conditions
+            .invalid-feedback
+              Please accept the terms and conditions before continuing.
+        %u.back{:href => "r1.html"} Back
+        %a.btn.btn-danger{:button => "", :href => "r3.html", :type => "button"} NEXT
+        .form-check

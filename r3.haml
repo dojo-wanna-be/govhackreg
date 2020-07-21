@@ -1,0 +1,126 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "style3.css", :rel => "stylesheet"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :rel => "stylesheet"}/
+    %script{:crossorigin => "anonymous", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :src => "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"}
+    %title
+      Gov Hack
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      %a.navbar-brand{:href => "#"}
+        %img{:alt => "", :height => "30", :loading => "lazy", :src => "C:/Users/shail/OneDrive/Desktop/govhack3/images/bannerlogo.png", :width => "30"}/
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item
+            %a.nav-link{:href => "#"} Conference
+          %li.nav-item
+            %a.nav-link{:href => "#"} Events
+          %li.nav-item
+            %a.nav-link{:href => "#"} Challenges
+          %li.nav-item
+            %a.nav-link{:href => "#"} Projects
+          %li.nav-item
+            %a.nav-link{:href => "#"} Datasets
+        %button.btn.btn-default{:type => "button"} join the hack
+    %section.container
+      .left-half
+        .reg
+          %h1.r Register
+          %ul.sreg{:style => "list-style-type:none;"}
+            %li{:a => "", :href => "r1.html"} 1. Account Information
+            %li &gt;
+            %li{:a => "", :href => "r2.html"} 2. Terms &amp; Conditions
+            %li &gt;
+            %li{:a => "", :href => "r3.html"}
+              %u 3. About You
+        %form
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "exampleInputfullname1"} Full Name
+              %input#exampleInputfullname1.form-control{"aria-describedby" => "emailHelp", :placeholder => "", :type => "fullname"}/
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "exampleInputpreferredname"} Preferred Name (optional)
+              %input#exampleInputpreferredname.form-control{:placeholder => "", :type => "preferredname"}/
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "examplepreferredorganisation"} Organisation (optional)
+              %input#exampleInputpreferredname.form-control{:placeholder => "", :type => "organisation"}/
+          %class#agelabel{:for => "age", :label => ""}
+            Age
+            .form-check.form-check-inline
+              %input#inlineRadio1.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option1"}/
+              %label.form-check-label{:for => "inlineRadio1"} Under 18
+            .form-check.form-check-inline
+              %input#inlineRadio2.form-check-input{:name => "inlineRadioOptions", :type => "radio", :value => "option2"}/
+              %label.form-check-label{:for => "inlineRadio2"} Over 18
+            .form-group.col-md-6
+              %label{:for => "inputState"} Region
+              %select#inputState.form-control
+                %option{:selected => "selected"} Choose...
+                %option NSW
+                %option ACT
+                %option VIC
+                %option QLD
+                %option NT
+                %option TAS
+                %option NZ
+            .form-group.col-md-6
+              %label{:for => "inputState"} How did you hear about GovHack?
+              %select#inputState.form-control
+                %option{:selected => "selected"} Choose...
+                %option
+                %option
+                %option
+                %option
+                %option
+                %option
+                %option
+            %label{:for => ""}
+              We will only contact you about your project with your consent.
+              %br/
+              Do you consent to be contacted by:
+            .form-check
+              %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
+              %label.form-check-label{:for => "defaultCheck1"}
+                Challenge sponsors if you win their prize?
+            .form-check
+              %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
+              %label.form-check-label{:for => "defaultCheck1"}
+                Challenge sponsors if you enter their challenge?
+            .form-check
+              %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
+              %label.form-check-label{:for => "defaultCheck1"}
+                Sponsors interested in your project?
+            .form-check
+              %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
+              %label.form-check-label{:for => "defaultCheck1"}
+                GovHack?
+            .form-check
+              %input#defaultCheck1.form-check-input{:type => "checkbox", :value => ""}/
+              %label.form-check-label{:for => "defaultCheck1"}
+                Added to the GovHack mailing list?
+            .somebutton
+              %u.back{:href => "r2.html"}
+                %u Back
+              %a.btn.btn-danger{:button => "", :href => "r4.html", :type => "button"} NEXT
+      .right-half
+        %link{:href => "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap", :rel => "stylesheet"}/
+        .welcome
+          %h2.wel Welcome to
+          %h1.title GovHack 2020
+          %p
+            GovHack is an international competition for people
+            %br/
+            of all abilities who seek to make life better through open data.
+          %p
+            Across one weekend, thousand come together to form teams,
+            %br/
+            agree projects, and participate in what has become
+            %br/
+            one of the world's larget open data competition.
