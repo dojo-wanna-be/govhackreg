@@ -1,0 +1,84 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "style1w.css", :rel => "stylesheet"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :rel => "stylesheet"}/
+    %script{:crossorigin => "anonymous", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :src => "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"}
+    %title
+      Gov Hack
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      %a.navbar-brand{:href => "#"}
+        %img{:alt => "", :height => "30", :loading => "lazy", :src => "C:/Users/shail/OneDrive/Desktop/govhack/images/bannerlogo.png", :width => "30"}/
+      %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item
+            %a.nav-link{:href => "#"} Conference
+          %li.nav-item
+            %a.nav-link{:href => "#"} Events
+          %li.nav-item
+            %a.nav-link{:href => "#"} Challenges
+          %li.nav-item
+            %a.nav-link{:href => "#"} Projects
+          %li.nav-item
+            %a.nav-link{:href => "#"} Datasets
+        %button.btn.btn-default{:type => "button"} join the hack
+    %section.container
+      .left-half
+        .reg
+          %h1.r Register
+          %ul.sreg{:style => "list-style-type:none;"}
+            %li{:a => "", :href => "r1.html"}
+              %u 1. Account Information
+            %li &gt;
+            %li{:a => "", :href => "r2.html"} 2. Terms &amp; Conditions
+            %li &gt;
+            %li{:a => "", :href => "r3.html"} 3. About You
+        %form
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "exampleInputEmail1"} Email
+              %input#validationServer03.form-control.is-invalid{:placeholder => "", :type => "email"}/
+              .invalid-feedback
+                Please choose a username.
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "exampleInputPassword1"} Password
+              %input#validationServer03.form-control.is-invalid{:placeholder => "", :type => "password"}/
+              .invalid-feedback
+                Password is too short (minimum is six characters).
+          .form-group
+            .form-group.col-md-6
+              %label{:for => "exampleInputConfirmPassword1"} Confirm Password
+              %input#validationServer03.form-control.is-invalid{:placeholder => "", :type => "confirmpassword"}/
+              .invalid-feedback
+                Password confirmation does not match.
+            .somebutton
+              %a.btn.btn-danger{:button => "", :href => "r2.html", :type => "button"} NEXT"button&gt;
+              .sign
+                %u{:a => "", :href => "signin"} Or Sign in
+              .con
+                %u{:a => "", :href => "/"} Didn't receive confirmation instructions?
+                %br/
+                %u{:a => "", :href => "/"} Didn't receive unlock instructions?
+          .right-half
+            %link{:href => "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap", :rel => "stylesheet"}/
+            .welcome
+              %h2.wel Welcome to
+              %h1.title GovHack 2020
+              %p
+                GovHack is an international competition for people
+                %br/
+                of all abilities who seek to make life better through open data.
+              %p
+                Across one weekend, thousand come together to form teams,
+                %br/
+                agree projects, and participate in what has become
+                %br/
+                one of the world's larget open data competition.
